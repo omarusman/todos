@@ -1,14 +1,20 @@
+$space: 10px;
 
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+form {
+  margin-top: $space;
 
-// Variables
-@import 'variables';
+  input[type=submit] {
+    margin-top: $space/2;
+  }
+}
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+.card {
+  padding: $space;
+}
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+.todo-list {
+  h4 {
+    font-size: $space * 2;
+    font-weight: bold;
+  }
 }

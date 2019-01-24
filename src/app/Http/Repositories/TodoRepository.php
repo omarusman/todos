@@ -33,7 +33,7 @@ class TodoRepository implements TodoRepositoryInterface
         $todo = new Todo;
 
         foreach ($input as $field => $value) {
-            $todo->where($field, $value);
+            $todo = $todo->where($field, $value);
         }
 
         $todo = $todo->first();
