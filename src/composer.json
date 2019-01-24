@@ -1,6 +1,7 @@
 {
-    "name": "laravel/laravel",
+  "name": "oozman/todos",
     "type": "project",
+  "version": "1.0.0",
     "description": "The Laravel Framework.",
     "keywords": [
         "framework",
