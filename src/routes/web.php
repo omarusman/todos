@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', ['uses' => 'TodoController@index']);
+Route::get('todos', ['uses' => 'TodoController@all']);
+Route::post('todos', ['uses' => 'TodoController@store']);
+Route::delete('todos/{id}', ['uses' => 'TodoController@destroy']);
