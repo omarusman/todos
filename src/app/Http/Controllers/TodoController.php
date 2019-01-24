@@ -26,7 +26,7 @@ class TodoController extends Controller
         }
     }
 
-    public function add(Request $request, TodoRepositoryInterface $todoRepository)
+    public function store(Request $request, TodoRepositoryInterface $todoRepository)
     {
 
         try {
